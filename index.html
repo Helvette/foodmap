@@ -4,15 +4,53 @@
 	<meta charset="UTF-8">
 	<title>Foodmap</title>
 	<!-- viewport, cdn a boostrap y link a mis estilos -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="first-view row">
+			<div class="foodmap valign-wrapper">
+				<h1 class="center-align">Foodmap</h1>
+			</div>
+		</div>
+
+		<div class="row principal-view">
+			<div class="col s12">
+				<h2>Foodmap</h2>
+				<hr>		
+			</div>
+			<div id="col s12 map center-align">
+				<p>ícono ¡Encuentra tus comercios más cercanos!</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13319.631278551857!2d-70.64331906971776!3d-33.425647527282166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurant!5e0!3m2!1ses-419!2scl!4v1513176008160" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col s12">
+				<h4>Filtra los comercios encontrados cerca tuyo</h4>
+				<select name="" id="">
+					<option value="" selected>Filtra Restaurantes</option>
+					<option value="comida-rápida">Comida Rápida</option>
+					<option value="comida-casera">Comida Casera</option>
+					<option value="comida-nacional">Comida Nacional</option>
+					<option value="comida-china">Comida China</option>
+					<option value="comida-vegana">Comida Vegan</option>
+					<option value="comida-naturista">Comida Naturista</option>
+					<option value="sushi">Sushi</option>
+					<option value="pasteleria">Pastelería</option>
+				</select>
+			</div>
+			<div class="col s12 images">
+				
+			</div>
+		</div>
+	</div>
 	
-
-
-
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>

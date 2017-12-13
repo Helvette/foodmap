@@ -1,0 +1,46 @@
+.row {
+	margin: 0;
+}
+
+.container-fluid {
+	height: 100vh;
+}
+
+.first-view {
+	height: 100%;
+	background-image: url(../images/4805028626_13325ea17b_o.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.first-view .foodmap {
+	width: 100%;
+	height: 100vh;
+}
+
+h1 {
+	margin: 0 auto;
+	color: #f57f17;
+	text-shadow:
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+h2 {
+	margin: 0;
+}
+
+.foodmap {
+	background: linear-gradient(308deg, transparent, rgba(0,0,0,0.8));
+  background-size: 400% 400%;
+	animation: AnimationName 7s ease infinite;
+
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 48%}
+  50%{background-position:100% 53%}
+  100%{background-position:0% 48%}
+}
