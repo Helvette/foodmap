@@ -1,14 +1,17 @@
+body, html {
+	height: 100%;
+}
+
 .row {
 	margin: 0;
 }
 
 .container-fluid {
-	height: 100vh;
-}
-
-.first-view {
 	height: 100%;
-	background-image: url(../images/4805028626_13325ea17b_o.jpg);
+}
+/* primera vista */
+.first-view {
+	background-image: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -18,29 +21,152 @@
 	height: 100vh;
 }
 
-h1 {
-	margin: 0 auto;
-	color: #f57f17;
-	text-shadow:
-   -1px -1px 0 black,
-    1px -1px 0 black,
-   -1px 1px 0 black,
-    1px 1px 0 black;
-}
-
-h2 {
-	margin: 0;
-}
-
 .foodmap {
 	background: linear-gradient(308deg, transparent, rgba(0,0,0,0.8));
   background-size: 400% 400%;
 	animation: AnimationName 7s ease infinite;
-
 }
 
+h1 {
+	font-weight: 100;
+	margin: 0;
+	padding: 150px 0 0 0;
+	color: #f57f17;
+	text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+/* segunda vista, principal */
+h2 {
+	margin: 0;
+}
+
+h2, h4, p {
+	text-align: center;
+	font-weight: 100;
+}
+
+h2 {
+	margin: 5px;
+	font-size: 30px;
+	color: #f57f17;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+	border: 0;
+	margin-bottom: 20px;
+}
+
+.principal-view {
+	color: white;
+	min-height: 100vh;
+	background-color: #2B2B2B;
+	padding: 20px 2px;
+}
+
+.select-wrapper input.select-dropdown {
+	box-sizing: border-box;
+	background-color: #f57f17;
+	color: white;
+	box-shadow: 0px 3px 13px 0px black;
+	border: none;
+	border-radius: 2px;
+	padding: 0 10px;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+	color: #f57f17;
+}
+
+.select-wrapper span.caret {
+	color: white;
+	padding: 0 10px;
+	z-index: 1;
+
+}
+.img-container {
+	background-color: red;
+	max-width: 100%;
+	overflow: hidden;
+	height: 100px;
+	margin: 20px 0;
+	position: relative;
+	box-shadow: 0px 3px 13px 0px black;
+}
+
+.img-container img {
+	display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -10px;
+}
+
+/* modal */
+
+#modal .place-title {
+	text-align: center;
+	font-weight: 100;
+	margin: 5px;
+	font-size: 30px;
+	color: #2B2B2B;
+	margin: 20px 0 10px 0;
+}
+#modal hr {
+	color: #2B2B2B;
+}
+
+#modal p {
+	font-weight: 400;
+	color: #2B2B2B;
+}
+
+#modal .txt {
+	color: #f57f17;
+}
+
+.order {
+	background-color: #f57f17;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: #f57f17;
+	padding: 0 8px;
+	height: 20px;
+	line-height: 8px;
+}
+
+/* animación fondo */
 @keyframes AnimationName {
   0%{background-position:0% 48%}
   50%{background-position:100% 53%}
   100%{background-position:0% 48%}
+}
+/* medias */
+@media (min-width: 600px) {
+	.hide-container {
+		height: 100vh;
+		background-image: url(../images/background.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.hide-container p {
+		font-size: 30px;
+		color: white;
+		text-align: center;
+	}
 }
