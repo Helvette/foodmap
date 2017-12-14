@@ -164,9 +164,18 @@ hr {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	.alert {
+		width: 100%;
+	}
 	.hide-container p {
 		font-size: 30px;
-		color: white;
+		font-weight: 600;
+		color: #f57f17;
 		text-align: center;
+		text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
 	}
 }
